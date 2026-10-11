@@ -1,0 +1,17 @@
+[package]
+name = "rust-ui"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+ui-core = { path = "crates/ui-core" }
+ui-render = { path = "crates/ui-render" }
+ui-window = { path = "crates/ui-window" }
+
+[workspace]
+members = [
+    "crates/ui-core",
+    "crates/ui-render",
+    "crates/ui-window",
+]
+resolver = "2"
